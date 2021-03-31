@@ -1,16 +1,18 @@
-    <link rel="shortcut icon"
-        href="/assets/img/favicon-32x32-8a0e6baf7d74202a7f74b2258fa31fbcb12240f01f49d16aa017749dd0cb47a3.png">
+<!--Your primary Favicon -->   
+<link rel="shortcut icon" href="/assets/img/favicon-32x32-8a0e6baf7d74202a7f74b2258fa31fbcb12240f01f49d16aa017749dd0cb47a3.png">
    
 
     <script>
         window.addEventListener('blur', function () {
             setTimeout(function () {
+                //'Unfocused' favicon
                 document.querySelector('link[rel="shortcut icon"]').href =
                     "/assets/img/fav-red.png";
             }, 2000);
         });
         window.addEventListener('focus', function () {
             document.querySelector('link[rel="shortcut icon"]').href =
+                //Reverting to your Main favicon when focus is restored
                 "/assets/img/favicon-32x32-8a0e6baf7d74202a7f74b2258fa31fbcb12240f01f49d16aa017749dd0cb47a3.png";
         });
     </script>
